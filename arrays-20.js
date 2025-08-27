@@ -31,7 +31,7 @@ const produtosMap = produtos.map((produtos) => {
 
 valorDesconto = somaValor * desconto;
 somaValorDesconto = somaValor - valorDesconto;
-console.log("Array original", produtosMap);
+console.log("Array Produto X valor", produtosMap);
 console.log("Total da compra: R$", somaValor);
 console.log("Valor de desconto (20% OFF): R$", valorDesconto);
 console.log("Valor com desconto (20% OFF) aplicado: R$", somaValorDesconto);
