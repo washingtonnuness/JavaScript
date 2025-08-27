@@ -6,6 +6,7 @@
 let array100 = [];
 let soma = 0;
 let somaA = 0;
+let somaF = 0;
 for (i = 0; i <= 100; i++) {
   array100.push(i);
 }
@@ -15,6 +16,7 @@ for (n = 1; n < array100.length; n++) {
   soma = soma + array100[n];
 }
 console.log("Total", soma);
+console.log("\n");
 
 console.log("Usando forEach");
 // Recebe um callback com 2 paramentros.
@@ -25,3 +27,11 @@ array100.forEach((valor, indice) => {
 });
 
 console.log("Valores de Numeros Par Total", somaA);
+console.log("\n");
+
+console.log("Usando filter");
+const arrayPar = array100.filter((numero) => {
+  return numero % 2 == 0;
+});
+
+console.log("Array de Numeros Par", arrayPar);
